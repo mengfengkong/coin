@@ -1,4 +1,4 @@
-module coin
+module github.com/mengfengkong/coin
 
 go 1.19
 
