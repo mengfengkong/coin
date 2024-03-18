@@ -1,15 +1,16 @@
-一个简单的查询币行情的终端工具
-##安装
+## 一个简单的查询币行情的终端工具
+
+## 安装
 ```
-go install github.com/mengfengkong/coin
+go install github.com/mengfengkong/coin@latest
 ```
-##设置环境变量
+## 设置环境变量
 从coinmarketcap注册获取API Key
 https://coinmarketcap.com/api/documentation/v1/#
 ```azure
 export COINMARKETCAP_API_KEY=xxxxxxxxxxxxx
 ```
-##Usage
+## Usage
 ```
 [root ~]# coin get btc
 +--------+------------------+-------------------+
