@@ -1,8 +1,8 @@
 package main
 
 import (
-	"coin/cmd"
 	"fmt"
+	"github.com/mengfengkong/coin/cmd"
 	"os"
 )
 

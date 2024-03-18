@@ -1,8 +1,8 @@
 package domain
 
 import (
-	"coin/model"
 	"encoding/json"
+	"github.com/mengfengkong/coin/model"
 	"io/ioutil"
 	"net/http"
 	"net/url"
