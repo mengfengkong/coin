@@ -13,13 +13,11 @@ type Client interface {
 }
 
 type client struct {
-	ApiKey string `json:"apiKey"`
+	apiKey string `json:"apiKey"`
 }
 
-var key string
-
 func NewClient(apiKey string) *client {
-	return &client{ApiKey: apiKey}
+	return &client{apiKey: apiKey}
 }
 
 func (c *client) Get(coin string) (*model.CoinResp, error) {
@@ -34,7 +32,7 @@ func (c *client) Get(coin string) (*model.CoinResp, error) {
 	q.Add("symbol", coin)
 
 	req.Header.Set("Accepts", "application/json")
-	req.Header.Add("X-CMC_PRO_API_KEY", c.ApiKey)
+	req.Header.Add("X-CMC_PRO_API_KEY", c.apiKey)
 	req.URL.RawQuery = q.Encode()
 
 	resp, err := client.Do(req)
