@@ -1,5 +1,5 @@
 ## 一个简单的查询币行情的终端工具
-
+缓存/更新频率：每 60 秒一次
 ## 安装
 ```
 go install github.com/mengfengkong/coin@latest
